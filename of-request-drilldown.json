@@ -15,8 +15,8 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "id": 8,
-  "iteration": 1692862081586,
+  "id": 9,
+  "iteration": 1702461200745,
   "links": [],
   "panels": [
     {
@@ -921,7 +921,7 @@
         "refresh": 1,
         "regex": "",
         "skipUrlSync": false,
-        "sort": 0,
+        "sort": 5,
         "tagValuesQuery": "",
         "tags": [],
         "tagsQuery": "",
@@ -937,6 +937,6 @@
   "timepicker": {},
   "timezone": "",
   "title": "Request drilldown",
-  "uid": "a69d6e1e9a82c538e2106b762b2a20a1a900a3b4",
-  "version": 1
+  "uid": "5a1b07e014560fc2576c36ea834838613f356d69",
+  "version": 4
 }
