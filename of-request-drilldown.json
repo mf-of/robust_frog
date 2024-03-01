@@ -642,7 +642,7 @@
       },
       "yaxes": [
         {
-          "format": "short",
+          "format": "decbytes",
           "label": null,
           "logBase": 1,
           "max": null,
@@ -672,7 +672,9 @@
       "decimals": 3,
       "description": "Ideally this should be 0. Pods with a negative value consume more than they request, positive means they ask more than they consume.",
       "fieldConfig": {
-        "defaults": {},
+        "defaults": {
+          "unit": "decbytes"
+        },
         "overrides": []
       },
       "fill": 1,
@@ -741,7 +743,7 @@
       },
       "yaxes": [
         {
-          "format": "short",
+          "format": "decbytes",
           "label": null,
           "logBase": 1,
           "max": null,
