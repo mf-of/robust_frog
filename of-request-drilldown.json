@@ -650,7 +650,7 @@
           "show": true
         },
         {
-          "format": "short",
+          "format": "decbytes",
           "label": null,
           "logBase": 1,
           "max": null,
@@ -751,7 +751,7 @@
           "show": true
         },
         {
-          "format": "short",
+          "format": "decbytes",
           "label": null,
           "logBase": 1,
           "max": null,
@@ -940,5 +940,5 @@
   "timezone": "",
   "title": "Request drilldown",
   "uid": "5a1b07e014560fc2576c36ea834838613f356d69",
-  "version": 4
+  "version": 5
 }
