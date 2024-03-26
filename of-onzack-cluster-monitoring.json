@@ -4643,7 +4643,7 @@
       "targets": [
         {
           "exemplar": true,
-          "expr": "sum(sum(label_replace\r\n (\nrate(container_memory_usage_bytes{namespace=~\"^[^-]+-.*\"}[5m]), \"prefix\", \"$1\", \"namespace\", \"^([^-]+).*\")\r\n\r\n) by (node, prefix) * on(node) group_left(role) topk(1,kube_node_role{role=\"worker\"}) by (node)) by (prefix)\r\n/\r\nsum(sum(label_replace\r\n (\r\nkube_pod_container_resource_requests{resource=\"memory\", namespace=~\"^[^-]+-.*\"}, \"prefix\", \"$1\", \"namespace\", \"^([^-]+).*\")\r\n\r\n) by (node, prefix)\n* on(node) group_left(role) topk(1,kube_node_role{role=\"worker\"}) by (node)) by (prefix)",
+          "expr": "sum(sum(label_replace\r\n (\ncontainer_memory_usage_bytes{namespace=~\"^[^-]+-.*\"}, \"prefix\", \"$1\", \"namespace\", \"^([^-]+).*\")\r\n\r\n) by (node, prefix) * on(node) group_left(role) topk(1,kube_node_role{role=\"worker\"}) by (node)) by (prefix)\r\n/\r\nsum(sum(label_replace\r\n (\r\nkube_pod_container_resource_requests{resource=\"memory\", namespace=~\"^[^-]+-.*\"}, \"prefix\", \"$1\", \"namespace\", \"^([^-]+).*\")\r\n\r\n) by (node, prefix)\n* on(node) group_left(role) topk(1,kube_node_role{role=\"worker\"}) by (node)) by (prefix)",
           "hide": false,
           "interval": "",
           "legendFormat": "{{prefix}}",
